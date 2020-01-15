@@ -7,8 +7,8 @@ import datetime
 import binascii
 import os
 
-TRANSMIT = bytes.fromhex('060119040000052f00680000000e0001000200010700000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c946c350004220000000000000000000000000000000000000')
-PDU_H = bytes.fromhex('06011a04ff00052f02200000000e0001000200010001000000001f401000')
+TRANSMIT = bytes.fromhex('')
+PDU_H = bytes.fromhex('')
 
 if len(sys.argv) != 2:                          # if no arguments used prints the following
     print('Usage: python3 audio_transmitmulti.py "Audiofile"')
