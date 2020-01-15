@@ -8,7 +8,7 @@ UDP_PORT = 3015
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 sock.bind((UDP_IP,UDP_PORT))
-goodheader = bytes.fromhex('06011a04')
+goodheader = bytes.fromhex('insert hex')
 
 def translate_transmission():
         #u-law_encoding == F(x) = sgn(x)((ln(1+u|x|)/(ln(1+u)))) -1 <= x <= 1
