@@ -41,7 +41,7 @@ def hex_chunk():                                # opens audio file, if errors pr
             num += 1
         hexLength = len(content)
         time.sleep(0.01)
-        print(num)
+        #print(num)
         print("Added Padding") 
         i = 0                                   # takes hex and puts into array at length required
         step = 514
@@ -56,7 +56,7 @@ def send_chunks(num_chunks, passed_list):       # sends the hex in chunks
             print("\rProgress: "+str(int((i+1)/num_chunks*100)) + "%", end='', flush=True)
             DATA = passed_list[i]
             DirtyAudio = (PDU_H + DATA)
-            sendM(TRANSMIT)
+            #sendM(TRANSMIT)
             sendM(DirtyAudio)
             i += 1
             time.sleep(.01)
