@@ -9,7 +9,7 @@ import os
 
 UDP = ('127.0.0.1', 5005)
 Good = bytes.fromhex('<insert audio hex here>')
-
+Good= bytes([int('01000001',2),66]) # will make bytes AB
 
 PDU_H = bytes.fromhex('<hex values go here>')
 
